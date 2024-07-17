@@ -1,0 +1,31 @@
+{
+    "name": "@teyuto/videojs-crop",
+    "author": "Teyuto",
+    "license": "MIT",
+    "version": "1.0.0",
+    "description": "Video.js Crop Plugin",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Teyuto/videojs-crop.git"
+    },
+    "private": false,
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "files": [
+        "src"
+    ],
+    "keywords": [
+      "videojs",
+      "videojs-plugin",
+      "videojs-crop",
+      "crop",
+      "teyuto",
+      "video"
+    ],
+    "bugs": {
+      "url": "https://github.com/Teyuto/videojs-crop/issues"
+    },
+    "homepage": "https://github.com/Teyuto/videojs-crop#readme"
+  }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://vjs.zencdn.net/8.0.0/video-js.css" rel="stylesheet">
+    <link href="../src/videojs-crop.css" rel="stylesheet"/>  
+</head>
+<body>
+  <video id="my-video" class="video-js" controls preload="auto" data-setup="{}">
+    <source src="https://streams.teyuto.tv/videos/113004_1-41811/480.mp4" type="video/mp4">
+  </video>
+
+  <div id="result"></div>
+
+  <script src="https://vjs.zencdn.net/8.0.0/video.js"></script>
+  <script src="../src/videojs-crop.js"></script>
+
+  <script>
+    const player = videojs('my-video');
+    
+    player.cropPlugin({
+      aspectRatios: ['9:16', '16:9', '3:4', '1:1'],
+      defaultAspectRatio: '9:16',
+      onCropChange: (cropParams) => {
+        console.log('Crop Parameters:', cropParams);
+        var result = document.getElementById('result');
+        result.innerText = JSON.stringify(cropParams);
+      }
+    });
+  </script>
+</body>
+</html>
