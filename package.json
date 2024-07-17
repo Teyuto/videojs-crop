@@ -2,7 +2,7 @@
     "name": "@teyuto/videojs-crop",
     "author": "Teyuto",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Video.js Crop Plugin",
     "repository": {
       "type": "git",
